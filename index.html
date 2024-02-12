@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студент ВШЭ</title>
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <nav class="wrapper">
+        <div class="hw">
+            <div class="hlogo">
+                <h1>HSE & ME</h1>
+            </div>
+
+            <div class="hmenu">
+                <a href="#intro">ГЛАВНАЯ</a>
+                <a href="#about_me"> ОБО МНЕ</a>
+                <a href="#my_activity">МОЯ ДЕЯТЕЛЬНОСТЬ</a>
+                <a href="feedback.html">ОБРАТНАЯ СВЯЗЬ</a>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+</header>
+<main>
+
+    <section class="intro" id="intro">
+        <div class="intro_pic">
+            <img src="hse.png" alt="INTRO" class="intro_img">
+        </div>
+
+        <div class="intro_r">
+            <h1 class="intro_info">
+                HSE
+            </h1>
+            <p class="intro_subinfo">
+                Тут много интересной информации о ВШЭ. Например, о том как много тут направлений и как много разных способов взаимодействий студентов между собой. А еще тут можно написать, какие крутые тут преподаватели :)
+            </p>
+        </div>
+    </section>
+
+    <section class="about_me" id="about_me">
+
+
+        <div class="about_r">
+
+            <h1 class="about_info">
+                <b>КАРНАУШЕНКО МИХАИЛ</b>
+            </h1>
+            <p class="about_subinfo">
+                Мне 20 и я студент Высшей Школы Экономики. В настоящий моменты это учебное заведение дало мне много полезных знаний и умений
+            </p>
+
+
+            <div class="columns">
+                <div class="column">
+                    <h2>Наука</h2>
+                    <ul>
+                        <li>Теоретическая механика</li>
+                        <li>Функциональный анализ</li>
+                        <li>Линейная алгебра</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Индустрия</h2>
+                    <ul>
+                        <li>ООП на плюсах</li>
+                        <li>Python</li>
+                        <li>Web</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="about_pic">
+            <img src="me_pic_3.png" alt="INTRO" class="about_img">
+        </div>
+    </section>
+
+
+
+    <section  class="my_activity" id="my_activity">
+
+        <div class="my_activity_r">
+
+            <h1 class="my_activity_info">
+                <b>МОЯ ДЕЯТЕЛЬНОСТЬ</b>
+            </h1>
+            <span class="my_activity_subinfo">
+                На факультете МИЭМ мы часто занимаемся проектами. Вот некоторые из них:
+            </span>
+
+        <div class="columns">
+            <a href="https://cabinet.miem.hse.ru/#/project/1336/">
+            <aside id="id1">
+                <h3 class="project">
+                    SEER
+                </h3>
+
+                <p>Помочь людям с нарушением работы зрения лучше ориентироваться в условиях современного города, повысить их мобильность и уровень адаптации посредством разработки программного обеспечения для слабовидящих людей, способного заменить или дополнить привычные способы ориентации в пространстве городской среды (такие как, например, собака-поводырь).</p>
+            </aside>
+            </a>
+
+            <a href="https://cabinet.miem.hse.ru/#/project/1462/">
+            <aside id="id2">
+                <h3 class="project" >
+                    MotionCapture
+                </h3>
+
+                <p>Разработка ПО, которое позволит захватывать движения и мимику лица человека и использовать полученные данные для создания высококачественных анимационных моделей.</p>
+            </aside>
+            </a>
+        </div>
+
+
+        </div>
+
+
+    </section>
+</main>
+<footer>
+    <p> Я - студент ВШЭ. Все права защищены. Почти. </p>
+</footer>
+
+<script>
+    var logo = document.querySelector('.intro_img');
+    var rotationAngle = 0;
+    setInterval(function() {
+        rotationAngle -= .1;
+        logo.style.transform = 'rotate(' + rotationAngle + 'deg)';
+    }, 10);
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav class="wrapper">
+        <div class="hw">
+            <div class="hlogo">
+                <h1>HSE & ME</h1>
+            </div>
+
+            <div class="hmenu">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="feedback_info">
+        <div class="feedback_info_container">
+            <h1 class="feedback_logo">
+                Обратная связь
+            </h1>
+            <p class="feedback_text">
+                Хотите узнать побольше? А может быть хотите предложить мне проект?
+            </p>
+            <p class="feedback_text">
+                Просто заполните форму и я свяжусь с Вами!
+            </p>
+        </div>
+    </section>
+
+
+    <section class="form_section">
+        <div class="form_section_text">
+
+            <h2 class="form_logo">Всего пара простых вопросов...</h2>
+            <div class="form_data">
+                <form>
+
+                    <div class="question">
+                        <label for="name">Введите свое имя:</label>
+                        <input type="text" placeholder="Иван Иванов" id="name"><br><br>
+                    </div>
+
+                    <div class="question">
+                        <label for="text">Опишите свой вопрос или предложение:</label>
+                        <textarea cols="30" rows="10" class="form3 formstyle" placeholder="Сообщение" id="text"></textarea><br><br>
+                    </div>
+
+                    <div class="question">
+                        <label for="number">Введите номер телефона, на который Вам перезвонят:</label>
+                        <small>Формат: 8-999-888-7777</small>
+                        <input type="tel" id="number" name="number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                    </div>
+
+                    <div class="question">
+                        <label for="email">Введите ваш email, на который вы хотите получить ответ:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                    </div>
+
+                    <div class="question">
+                        <label for="date">Введите дату, до который Вы хотели бы получить ответ:</label>
+                        <input type="date" id="date" name="date"><br><br>
+                    </div>
+                    <div class="question">
+                        <label for="radio1">Вопрос:</label>
+                        <input type="radio" id="radio1" name="radio" value="radio1">
+                    </div>
+
+                    <div class="question">
+                        <label for="radio2">Предложение:</label>
+                        <input type="radio" id="radio2" name="radio" value="radio2"><br><br>
+                    </div>
+
+                    <div class="question">
+                        <label for="file">Прикрепите Ваши наработки или материалы:</label>
+                        <input type="file" id="file" name="file"><br><br>
+                    </div>
+                    <div class="question">
+                        <label for="password">Если на документах есть пароль, введите его:</label>
+                        <input type="password" id="password" name="password"><br><br>
+
+                    </div>
+
+                    <div class="question">
+                        <label for="color">Выберет основной цвет проекта, если такой есть:</label>
+                        <input type="color" id="color" name="color"><br><br>
+                    </div>
+                    <div class="question">
+                        <label for="range">Укажите, сколько Вам лет:</label>
+                        <input type="range" id="range" name="range" min="18"
+                               max="100" value="50">
+                        <span id="rangeValue">50</span><br><br>
+                    </div>
+                    <div class="question">
+                        <label for="checkbox">Я согласен с <i>Политикой Конфиденциальности</i> :</label>
+                        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+                    </div>
+
+
+
+
+
+                    <div class="question">
+                        <label for="submit">Отправить:</label>
+                        <input type="submit" id="submit" value="ОТПРАВИТЬ"><br><br>
+                    </div>
+                    <div class="question">
+                        <label for="reset">Сбросить форму:</label>
+                        <input type="reset" id="reset" value="СБРОСИТЬ"><br><br>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Я - студент ВШЭ</p>
+    </footer>
+<script>
+    const rangeInput = document.getElementById('range');
+
+// Get the span element where the value will be displayed
+const rangeValue = document.getElementById('rangeValue');
+
+// Update the span element when the range input changes
+rangeInput.addEventListener('input', function() {
+    rangeValue.textContent = this.value;
+});</script>
+
+</main>
+</body>
+</html>
