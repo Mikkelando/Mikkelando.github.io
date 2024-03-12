@@ -391,6 +391,139 @@ footer p {
     padding: 0px 10px;
 }
 
+
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: none; /* Initially hidden */
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#message-input {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+#send-button, #record-button {
+    display: block;
+    margin: 0 auto;
+}
+
+#toggle-chat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#toggle-chat:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.toggle-chat {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4254be; /* Green */
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggle-chat img {
+    width: 80%;
+    height: 80%;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: none; 
+    z-index: 9998;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}
+
+.message-input {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.send-button, .record-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button {
+    background-color: #008CBA; /* Blue */
+    color: white;
+    margin-right: 10px;
+}
+
+.record-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.record-button.recording {
+    background-color: #f44336; /* Red */
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     .hw {
         display: flex;
