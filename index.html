@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" >
+
     <style>
         .hw {
             display: flex;
@@ -41,6 +45,8 @@
 
 </header>
 <main>
+
+    
 
     <section class="intro" id="intro">
         <div class="intro_pic">
@@ -138,18 +144,37 @@
 
 
     </section>
+
+
+
+
+    <button id="toggle-chat" class="toggle-chat"><img src="chat.png" alt="Chat Icon"></button>
+    <div id="chat-container" class="chat-container">
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="input-container">
+            <textarea id="message-input" class="message-input" placeholder="Ваше сообщение..."></textarea>
+            <div class="button-container">
+                <button id="send-button" class="send-button">Отправить</button>
+                <button id="record-button" class="record-button">Войс</button>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+
 </main>
 <footer>
     <p> Я - студент ВШЭ. Все права защищены. Почти. </p>
+    <div id="map" style="width: 600px; height: 400px; display: flex;
+    width: 100%;
+    justify-content: center;z-index: 0;"></div>
 </footer>
+<script src="map.js"></script>
 
-<script>
-    var logo = document.querySelector('.intro_img');
-    var rotationAngle = 0;
-    setInterval(function() {
-        rotationAngle -= .1;
-        logo.style.transform = 'rotate(' + rotationAngle + 'deg)';
-    }, 10);
-</script>
 </body>
 </html>
+
+
+
+
+
+
